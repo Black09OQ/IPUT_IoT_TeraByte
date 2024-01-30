@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "591941845593",
+    "project_id": "iput-iotservice",
+    "storage_bucket": "iput-iotservice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591941845593:android:d249431d1e6be1b574e748",
+        "android_client_info": {
+          "package_name": "com.iputok.IoTService"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwg3BajPuhyS9Vs_YXZvICuDZxlLkIWf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591941845593:android:c28f1f7c7ce557dc74e748",
+        "android_client_info": {
+          "package_name": "com.iputok.IoT_CloudMap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwg3BajPuhyS9Vs_YXZvICuDZxlLkIWf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

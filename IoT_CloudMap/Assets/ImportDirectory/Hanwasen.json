@@ -1,0 +1,70 @@
+{
+    "Stations" :[
+        {
+            "stationName" : "TENNOJI",
+            "stationCharacter" : "天王寺",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        },
+        {
+            "stationName" : "SAKAISHI",
+            "stationCharacter" : "堺市",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        },
+        {
+            "stationName" : "MIKUNIGAOKA",
+            "stationCharacter" : "三国ヶ丘",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        },
+        {
+            "stationName" : "OOTORI",
+            "stationCharacter" : "鳳",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        },
+        {
+            "stationName" : "IZUMIHUCHU",
+            "stationCharacter" : "和泉府中",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        },
+        {
+            "stationName" : "HIGASHIKISHIWADA",
+            "stationCharacter" : "東岸和田",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        },
+        {
+            "stationName" : "KUMATORI",
+            "stationCharacter" : "熊取",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        },
+        {
+            "stationName" : "HINENO",
+            "stationCharacter" : "日根野",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        },
+        {
+            "stationName" : "IZUMISUNAGAWA",
+            "stationCharacter" : "和泉砂川",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        },
+        {
+            "stationName" : "IZUMITOTTORI",
+            "stationCharacter" : "和泉鳥取",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        },
+        {
+            "stationName" : "WAKAYAMA",
+            "stationCharacter" : "和歌山",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        }
+    ]
+}

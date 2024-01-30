@@ -1,0 +1,70 @@
+{
+    "Stations" :[
+        {
+            "stationName" : "JRNAMBA",
+            "stationCharacter" : "JR難波",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },
+        {
+            "stationName" : "IMAMIYA",
+            "stationCharacter" : "今宮",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },
+        {
+            "stationName" : "SHINIMAMIYA",
+            "stationCharacter" : "新今宮",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },
+        {
+            "stationName" : "TENNOJI",
+            "stationCharacter" : "天王寺",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },
+        {
+            "stationName" : "KYUHOUJI",
+            "stationCharacter" : "久宝寺",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },  
+        {
+            "stationName" : "YAO",
+            "stationCharacter" : "八尾",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },
+        {
+            "stationName" : "KASHIWARA",
+            "stationCharacter" : "柏原",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },
+        {
+            "stationName" : "OUJI",
+            "stationCharacter" : "王寺",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },
+        {
+            "stationName" : "NARA",
+            "stationCharacter" : "奈良",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },
+        {
+            "stationName" : "KIDU",
+            "stationCharacter" : "木津",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },
+        {
+            "stationName" : "KAMO",
+            "stationCharacter" : "加茂",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        }
+    ]
+}

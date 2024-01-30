@@ -1,0 +1,118 @@
+{
+    "Stations" :[
+        {
+            "stationName" : "UMEDA",
+            "stationCharacter" : "大阪",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "TENMA",
+            "stationCharacter" : "天満",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "SAKURANOMIYA",
+            "stationCharacter" : "桜ノ宮",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "KYOBASHI",
+            "stationCharacter" : "京橋",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "OSAKAJOKOUEN",
+            "stationCharacter" : "大阪城公園",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "MORINOMIYA",
+            "stationCharacter" : "森ノ宮",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "TAMATSUKURI",
+            "stationCharacter" : "玉造",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "TSURUHASHI",
+            "stationCharacter" : "鶴橋",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "MOMODANI",
+            "stationCharacter" : "桃谷",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "TERADACHO",
+            "stationCharacter" : "寺田町",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "TENNOJI",
+            "stationCharacter" : "天王寺",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "SHINIMAMIYA",
+            "stationCharacter" : "新今宮",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "IMAMIYA",
+            "stationCharacter" : "今宮",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "ASHIHARABASHI",
+            "stationCharacter" : "芦原橋",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "TAISHO",
+            "stationCharacter" : "大正",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "BENTENCHO",
+            "stationCharacter" : "弁天町",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "NISHIKUJO",
+            "stationCharacter" : "西九条",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "NODA",
+            "stationCharacter" : "野田",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "FUKUSHIMA",
+            "stationCharacter" : "福島",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        }
+    ]
+}

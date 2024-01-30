@@ -1,0 +1,22 @@
+{
+    "Stations" :[
+        {
+            "stationName" : "KANSAIKUUKOU",
+            "stationCharacter" : "関西空港",
+            "co2" : 0,
+            "stationColor" : "#137DBD"
+        },
+        {
+            "stationName" : "RINKUUTOWN",
+            "stationCharacter" : "りんくうタウン",
+            "co2" : 0,
+            "stationColor" : "#137DBD"
+        },
+        {
+            "stationName" : "HINENO",
+            "stationCharacter" : "日根野",
+            "co2" : 0,
+            "stationColor" : "#137DBD"
+        }
+    ]
+}

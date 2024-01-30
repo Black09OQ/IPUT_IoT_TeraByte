@@ -1,0 +1,28 @@
+{
+    "Stations" :[
+        {
+            "stationName" : "OOSAKAKANJYOUSEN",
+            "stationCharacter" : "大阪環状線",
+            "co2" : 0,
+            "stationColor" : "#D81817"
+        },
+        {
+            "stationName" : "KANSAIKUUKOUSEN",
+            "stationCharacter" : "関西空港線",
+            "co2" : 0,
+            "stationColor" : "#137DBD"
+        },
+        {
+            "stationName" : "YAMATOJISEN",
+            "stationCharacter" : "大和路線",
+            "co2" : 0,
+            "stationColor" : "#00AD72"
+        },
+        {
+            "stationName" : "HANWASEN",
+            "stationCharacter" : "阪和線",
+            "co2" : 0,
+            "stationColor" : "#F6AC21"
+        }
+    ]
+}
