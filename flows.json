@@ -1,0 +1,843 @@
+[
+    {
+        "id": "239d48f8896ef8bc",
+        "type": "tab",
+        "label": "フロー 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d83e9edc148a86f7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "399707b9ca4cb399",
+        "type": "ui_tab",
+        "name": "ホーム",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "53eb95b78a7dade3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED ダッシュボード",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "YYYY/MM/DD",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a530f350b3e3bff4",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "399707b9ca4cb399",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f8610872744b9982",
+        "type": "ui_group",
+        "name": "Humidity",
+        "tab": "399707b9ca4cb399",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "47ed4dcb11345a0b",
+        "type": "ui_group",
+        "name": "CO2",
+        "tab": "399707b9ca4cb399",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4b8c551ace03345c",
+        "type": "firebase admin",
+        "name": "Firebase"
+    },
+    {
+        "id": "634576add4beb147",
+        "type": "aedes broker",
+        "z": "239d48f8896ef8bc",
+        "name": "",
+        "mqtt_port": "1883",
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "8080",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "persistence_bind": "memory",
+        "dburl": "",
+        "usetls": false,
+        "x": 270,
+        "y": 280,
+        "wires": [
+            [
+                "ca15f2cb31c3bcb8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ca15f2cb31c3bcb8",
+        "type": "debug",
+        "z": "239d48f8896ef8bc",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d4f9aad165d356b6",
+        "type": "mqtt in",
+        "z": "239d48f8896ef8bc",
+        "name": "",
+        "topic": "/topic/tem",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d83e9edc148a86f7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 360,
+        "wires": [
+            [
+                "1e5a972e3914ae0e",
+                "68e8acfdd99a4879",
+                "d8843465ac4c9e6f",
+                "e8f73cbb32cfab0a"
+            ]
+        ]
+    },
+    {
+        "id": "e016ee32c1ba6283",
+        "type": "mqtt in",
+        "z": "239d48f8896ef8bc",
+        "name": "",
+        "topic": "/topic/hum",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d83e9edc148a86f7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 540,
+        "wires": [
+            [
+                "b64c994a0b789851",
+                "167726342b7d3662",
+                "90038f19675efb1b"
+            ]
+        ]
+    },
+    {
+        "id": "08e34bf0ebc52464",
+        "type": "mqtt in",
+        "z": "239d48f8896ef8bc",
+        "name": "",
+        "topic": "/topic/co2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d83e9edc148a86f7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 700,
+        "wires": [
+            [
+                "ffa7d76ecbafe6a0",
+                "2fcd408c5d10927d",
+                "82c4d9bb8a35cbd8"
+            ]
+        ]
+    },
+    {
+        "id": "68e8acfdd99a4879",
+        "type": "ui_gauge",
+        "z": "239d48f8896ef8bc",
+        "name": "温度",
+        "group": "a530f350b3e3bff4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "temperature",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 510,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "1e5a972e3914ae0e",
+        "type": "debug",
+        "z": "239d48f8896ef8bc",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d8843465ac4c9e6f",
+        "type": "ui_chart",
+        "z": "239d48f8896ef8bc",
+        "name": "温度2",
+        "group": "a530f350b3e3bff4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 510,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b64c994a0b789851",
+        "type": "debug",
+        "z": "239d48f8896ef8bc",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "2fcd408c5d10927d",
+        "type": "debug",
+        "z": "239d48f8896ef8bc",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "167726342b7d3662",
+        "type": "ui_gauge",
+        "z": "239d48f8896ef8bc",
+        "name": "湿度",
+        "group": "f8610872744b9982",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 510,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ffa7d76ecbafe6a0",
+        "type": "ui_gauge",
+        "z": "239d48f8896ef8bc",
+        "name": "CO2",
+        "group": "47ed4dcb11345a0b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 510,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "6b6709c280b84508",
+        "type": "function",
+        "z": "239d48f8896ef8bc",
+        "name": "DifineValues",
+        "func": "var CO2Value = flow.get('CO2Value')||0;\nvar TemperatureValue = flow.get('TemperatureValue')||0;\nvar HumidityValue = flow.get('HumidityValue')||0;\n\nmsg.payload = {\n  CO2: CO2Value,\n  Temperature: TemperatureValue,\n  Humidity: HumidityValue\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 200,
+        "wires": [
+            [
+                "e438e2a67f0240f7"
+            ]
+        ]
+    },
+    {
+        "id": "e438e2a67f0240f7",
+        "type": "debug",
+        "z": "239d48f8896ef8bc",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "426bb43234cc7c74",
+        "type": "inject",
+        "z": "239d48f8896ef8bc",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 200,
+        "wires": [
+            [
+                "6b6709c280b84508"
+            ]
+        ]
+    },
+    {
+        "id": "e8f73cbb32cfab0a",
+        "type": "function",
+        "z": "239d48f8896ef8bc",
+        "name": "SetTemperature",
+        "func": "var TemperatureValue = flow.get('TemperatureValue')||0;\n\nTemperatureValue = msg.payload;\n\nflow.set('TemperatureValue', TemperatureValue);\n\nmsg.payload = {\n    Temperature : flow.get('TemperatureValue')\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 460,
+        "wires": [
+            [
+                "7ced8c84a78375e5"
+            ]
+        ]
+    },
+    {
+        "id": "7ced8c84a78375e5",
+        "type": "debug",
+        "z": "239d48f8896ef8bc",
+        "name": "SetTemperatureDebug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "90038f19675efb1b",
+        "type": "function",
+        "z": "239d48f8896ef8bc",
+        "name": "SetHumidity",
+        "func": "var HumidityValue = flow.get('HumidityValue')||0;\n\nHumidityValue = msg.payload;\n\nflow.set('HumidityValue', HumidityValue);\n\nmsg.payload = {\n    Humidity : flow.get('HumidityValue')\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 620,
+        "wires": [
+            [
+                "f68ce63b9a61ab38"
+            ]
+        ]
+    },
+    {
+        "id": "f68ce63b9a61ab38",
+        "type": "debug",
+        "z": "239d48f8896ef8bc",
+        "name": "SetHumidityDebug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "82c4d9bb8a35cbd8",
+        "type": "function",
+        "z": "239d48f8896ef8bc",
+        "name": "SetCO2",
+        "func": "var CO2Value = flow.get('CO2Value')||0;\n\nCO2Value = msg.payload;\n\nflow.set('CO2Value', CO2Value);\n\nmsg.payload = {\n    CO2 : flow.get('CO2Value')\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 780,
+        "wires": [
+            [
+                "5f0001cf35b45b9f"
+            ]
+        ]
+    },
+    {
+        "id": "5f0001cf35b45b9f",
+        "type": "debug",
+        "z": "239d48f8896ef8bc",
+        "name": "SetCO2Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "fa546db571621b80",
+        "type": "inject",
+        "z": "239d48f8896ef8bc",
+        "name": "SendData",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 900,
+        "wires": [
+            [
+                "8094b89c376e6a89"
+            ]
+        ]
+    },
+    {
+        "id": "8094b89c376e6a89",
+        "type": "function",
+        "z": "239d48f8896ef8bc",
+        "name": "function 1",
+        "func": "var co2 = flow.get('CO2Value')||0;\nvar temp = flow.get('TemperatureValue')||0;\nvar hum = flow.get('HumidityValue')||0;\n\nmsg.payload = {\n    Name : \"KYOBASHI\",\n    CO2Value : co2,\n    Temperature : temp,\n    Humidity : hum,\n    Date: '_serverTimestamp'\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 900,
+        "wires": [
+            [
+                "ccc2295a3ac380cc"
+            ]
+        ]
+    },
+    {
+        "id": "ccc2295a3ac380cc",
+        "type": "Firestore out",
+        "z": "239d48f8896ef8bc",
+        "name": "Firestore WriteCO2Data",
+        "collection": "CO2Data",
+        "document": "",
+        "operation": "add",
+        "admin": "4b8c551ace03345c",
+        "eject": false,
+        "x": 790,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b9a38fef2b26e6f",
+        "type": "mqtt in",
+        "z": "239d48f8896ef8bc",
+        "name": "",
+        "topic": "/topic/through",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d83e9edc148a86f7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 1020,
+        "wires": [
+            [
+                "573f16daaed44a80",
+                "126e032012c3f659"
+            ]
+        ]
+    },
+    {
+        "id": "573f16daaed44a80",
+        "type": "debug",
+        "z": "239d48f8896ef8bc",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "63b0cee98992e860",
+        "type": "Firestore out",
+        "z": "239d48f8896ef8bc",
+        "name": "Firestore WriteThroughData",
+        "collection": "ThroughData",
+        "document": "",
+        "operation": "add",
+        "admin": "4b8c551ace03345c",
+        "eject": false,
+        "x": 780,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "126e032012c3f659",
+        "type": "function",
+        "z": "239d48f8896ef8bc",
+        "name": "function 2",
+        "func": "var name = msg.payload;\n\nmsg.payload = {\n    Name: name,\n    Date: '_serverTimestamp'\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1060,
+        "wires": [
+            [
+                "63b0cee98992e860"
+            ]
+        ]
+    },
+    {
+        "id": "3ac33f107974c4de",
+        "type": "inject",
+        "z": "239d48f8896ef8bc",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 1160,
+        "wires": [
+            [
+                "64d8db6e66ab71a3"
+            ]
+        ]
+    },
+    {
+        "id": "64d8db6e66ab71a3",
+        "type": "function",
+        "z": "239d48f8896ef8bc",
+        "name": "function 3",
+        "func": "msg.payload = {\n    name : \"TENNOJI\",\n    Date: '_serverTimestamp'\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1160,
+        "wires": [
+            [
+                "c2485c671dab1195"
+            ]
+        ]
+    },
+    {
+        "id": "c2485c671dab1195",
+        "type": "Firestore out",
+        "z": "239d48f8896ef8bc",
+        "name": "Firestore WriteThroughData",
+        "collection": "ThroughData",
+        "document": "",
+        "operation": "add",
+        "admin": "4b8c551ace03345c",
+        "eject": false,
+        "x": 780,
+        "y": 1160,
+        "wires": [
+            [
+                "02096e991e93c656"
+            ]
+        ]
+    },
+    {
+        "id": "02096e991e93c656",
+        "type": "debug",
+        "z": "239d48f8896ef8bc",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 1160,
+        "wires": []
+    }
+]
